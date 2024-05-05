@@ -1,0 +1,9 @@
+input.numberToText::-webkit-outer-spin-button,
+input.numberToText::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"].numberToText {
+  -moz-appearance: textfield;
+}

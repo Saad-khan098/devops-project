@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LEMONMILK-Regular';
+  src: url('/fonts/LEMONMILK-Regular.otf') format('opentype');
+}
+
+.st0 {
+  fill: none;
+  stroke: #232323;
+  stroke-width: 1.9187;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st1 {
+  fill: none;
+  stroke: #232323;
+  stroke-width: 1.9187;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 4.99, 4.99;
+}
+
+.st2 { fill: #E74C9B; }
+.st3 { fill: none; }
+.st4 { fill: #FFFFFF; }
+.st5 { font-family: 'Montserrat-ExtraBold', sans-serif; line-height: 2.4;  }
+.st6 { font-size: 22px;line-height: 2.4;  }
+.st7 { font-size: 36.5px;line-height: 2.4;  }
+.st8 { fill: #101010; }
+.st9 { fill: #E64C9B; }
+.st10 { fill: #333333; }
+.st11 { font-family: 'LEMONMILK-Regular', sans-serif; line-height: 2.4; }
+.st12 { font-size: 50px; line-height: 2.4;  }
+.st13 { fill: #B674B0; }
+.st14 { fill: #9F80BA; }
+.st15 { stroke: #121212; stroke-miterlimit: 10; }
+.st16 {
+  background: linear-gradient(90deg, #e64c9b 0%, #a080ba 100%, #e74c9b 100%);
+}
+
+.st17 {
+  background: linear-gradient(90deg, #ed1c8f 0%, #ed2224 100%);
+}
+
+.st18 {
+  background: linear-gradient(90deg, #ed1c8f 0%, #ed2224 100%);
+}
+
+.st19 {
+  background: linear-gradient(90deg, #ed1c8f 0%, #ed2224 100%);
+}
+
+.st20 {
+  background: linear-gradient(90deg, #ed1c8f 0%, #ed2224 100%);
+}
+
+/* This is for the hover effect and opacity transitions */
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Roadmap.module.css */
+.svg-container {
+  width: 100%;
+  min-height: 300px; /* This is an arbitrary minimum height. Adjust as needed. */
+}
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+  .svg-container {
+    min-height: 500px; /* Increase the minimum height for smaller screens */
+  }
+}

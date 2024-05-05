@@ -1,0 +1,112 @@
+/* Table container style */
+.tableWrapper {
+  padding: 1px;
+  background: linear-gradient(to right, #3125d8, #ff43ff);
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 20px auto;
+  width: 100%;
+}
+
+/* Gradient border around the table */
+.gradientBorder {
+  background: rgba(0, 0, 0, 0.82);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Table Header */
+.tableHeader {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+}
+
+/* Rounded corners for the top of the table */
+.roundedTop {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Table body */
+.tableBody {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* Table cell styling */
+.headerCell,
+.bodyCell {
+  padding: 10px;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* Column specific adjustments - Increased left padding for Offering Type */
+.offeringTypeHeader,
+.offeringTypeCell {
+  width: 25%;
+  text-align: left;
+  padding-left: 8em; /* Increased left padding */
+}
+
+.quantityHeader,
+.quantityCell {
+  width: 25%;
+  text-align: center;
+}
+
+.priceHeader,
+.priceCell {
+  width: 25%;
+  text-align: center;
+}
+
+.raisedHeader,
+.raisedCell {
+  width: 25%;
+  text-align: center;
+  padding-right: 1em;
+}
+
+/* Responsive table adjustments */
+@media (max-width: 767px) {
+  .headerCell,
+  .bodyCell {
+    padding: 1em; /* Smaller padding on smaller screens */
+  }
+
+  .offeringTypeHeader,
+  .offeringTypeCell,
+  .raisedHeader,
+  .raisedCell {
+    padding-left: 1em; /* Adjusted space for content */
+    padding-right: 0.5em;
+  }
+
+  .tableWrapper {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* Ensure the bottom border is visible */
+.roundedBottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #3125d8, #ff43ff);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* Fixing table layout */
+.table {
+  width: 100%;
+  table-layout: fixed;
+}

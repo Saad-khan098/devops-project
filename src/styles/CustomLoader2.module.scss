@@ -1,0 +1,101 @@
+@keyframes quiet {
+    25%{
+      transform: scaleY(.6);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.8);
+    }
+  }
+  
+  @keyframes normal {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.6);
+    }
+  }
+  @keyframes loud {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(1.2);
+    }
+  }
+  
+  .boxContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    --boxSize: 12px;
+    --gutter: 20px;
+    width: calc((var(--boxSize) + var(--gutter)) * 5);
+  }
+  
+  .box{
+    transform: scaleY(.4);
+    height: 100%;
+    margin-left: 8px;
+    width: var(--boxSize);
+    background: #c51d6e;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+  }
+  
+  .box1{
+    animation-delay: 0.2s;
+    animation-name: quiet;
+  }
+  
+  .box2{
+    animation-name: normal;
+  }
+  
+  .box3{
+    animation-name: quiet;
+  }
+  
+  .box4{
+    animation-delay: 0.5s;
+    animation-name: loud;
+  }
+  
+  .box5{
+    animation-name: quiet;
+  }
+
+  .box6{
+    animation-delay: 0.1s;
+    animation-name: normal;
+  }
+
+  .box7{
+    animation-name: quiet;
+  }
+  .box8{
+    animation-delay: 0.6s;
+    animation-name: loud;
+  }
+  .box9{
+    animation-name: quiet;
+  }
+
+  .box10{
+    animation-delay: 0.3s;
+    animation-name: normal;
+  }
+  .box11{
+    animation-name: loud;
+  }

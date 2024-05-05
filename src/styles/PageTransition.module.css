@@ -1,0 +1,19 @@
+.slideIn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #e23e57, #522546);
+  transform-origin: bottom;
+}
+
+.slideOut {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #e23e57, #522546);
+  transform-origin: top;
+}

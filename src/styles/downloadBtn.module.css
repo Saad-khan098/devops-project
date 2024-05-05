@@ -1,0 +1,6 @@
+.downBtn {
+  color: darkmagenta;
+}
+.downBtn:hover {
+  color: rgb(180, 5, 180);
+}

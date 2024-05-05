@@ -1,0 +1,125 @@
+/* Roadmap.module.css */
+
+@font-face {
+  font-family: 'Calibri-Bold';
+  src: url('/public/fonts/Calibri-Bold.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('/public/fonts/Poppins-Bold.ttf') format('opentype');
+}
+
+.st0 { clip-path: url(#SVGID_2_); }
+.st1 { opacity: 0.46; }
+.st2 { opacity: 0.5; fill: url(#SVGID_3_); }
+.st3 { fill: url(#SVGID_4_); }
+.st4 { fill: url(#SVGID_5_); }
+.st5 { fill: url(#SVGID_6_); }
+.st6 { fill: #FF148A; }
+.st7 { font-family: 'Calibri-Bold'; }
+.st8 { font-size: 18px; }
+.st9 { font-size: 25px; }
+.st10 { fill: none; }
+.st11 { opacity: 0.5; }
+.st12 { font-family: 'Poppins-Bold'; }
+.st13 { font-size: 10px; fill: #FF148A; opacity: 1; }
+.st14 { fill: none; stroke: url(#SVGID_7_); stroke-miterlimit: 10; }
+.st15 { fill: none; stroke: #FF148A; stroke-miterlimit: 10; }
+.st16 { fill: url(#SVGID_8_); }
+.st17 { fill: #FC6085; }
+.st18 { fill: url(#SVGID_9_); }
+.st19 { fill: none; stroke: url(#SVGID_10_); stroke-miterlimit: 10; }
+.st20 { fill: none; stroke: #FC6085; stroke-miterlimit: 10; }
+.st21 { fill: #FF138B; }
+.st22 { fill: none; stroke: url(#SVGID_11_); stroke-miterlimit: 10; }
+.st23 { fill: url(#SVGID_12_); }
+.st24 { fill: #FF417D; }
+.st25 { fill: url(#SVGID_13_); }
+.st26 { fill: none; stroke: url(#SVGID_14_); stroke-miterlimit: 10; }
+.st27 { fill: none; stroke: url(#SVGID_15_); stroke-miterlimit: 10; }
+.st28 { fill: #9C1F88; }
+.st29 { fill: url(#SVGID_16_); }
+.st30 { fill: none; stroke: url(#SVGID_17_); stroke-miterlimit: 10; }
+.st31 { fill: #703E9B; }
+.st32 { font-size: 10px; }
+.st33 { fill: url(#SVGID_18_); }
+.st34 { fill: none; stroke: url(#SVGID_19_); stroke-miterlimit: 10; }
+.st35 { fill: url(#SVGID_20_); }
+.st36 { fill: none; stroke: url(#SVGID_21_); stroke-miterlimit: 10; }
+.st37 { fill: none; stroke: #703E9B; stroke-miterlimit: 10; }
+.st38 { fill: url(#SVGID_22_); }
+.st39 { fill: #293E67; }
+.st40 { fill: #A1A1A1; }
+.st41 { fill: none; stroke: url(#SVGID_23_); stroke-miterlimit: 10; }
+.st42 { fill: none; stroke: #293E67; stroke-miterlimit: 10; }
+
+/* Stage specific styles */
+.stage {
+  cursor: pointer;
+}
+
+.stageText, .descriptiveText {
+  transition: opacity 0.3s ease-in-out, fill 0.3s ease;
+}
+
+.descriptiveText {
+  opacity: 0; /* Hidden initially */
+}
+
+/* Hover styles for each stage */
+
+.stage1:hover .stageText,
+.stage1:hover .descriptiveText { 
+    fill: #FF148A; 
+    opacity: 1; 
+}
+
+.stage2:hover .stageText,
+.stage2:hover .descriptiveText { 
+    fill: #FC6085; 
+    opacity: 1; 
+}
+
+.stage3:hover .stageText,
+.stage3:hover .descriptiveText { 
+    fill: #FF138B; 
+    opacity: 1; 
+}
+
+.stage4:hover .stageText,
+.stage4:hover .descriptiveText { 
+    fill: #FF417D; 
+    opacity: 1; 
+}
+
+.stage5:hover .stageText,
+.stage5:hover .descriptiveText { 
+    fill: #9C1F88; 
+    opacity: 1; 
+}
+
+.stage6:hover .stageText,
+.stage6:hover .descriptiveText { 
+    fill: #703E9B; 
+    opacity: 1; 
+}
+
+.stage7:hover .stageText,
+.stage7:hover .descriptiveText { 
+    fill: #703E9B; /* Assuming Stage 7 has the same color as Stage 6 */
+    opacity: 1; 
+}
+
+.stage8:hover .stageText,
+.stage8:hover .descriptiveText { 
+    fill: #293E67; 
+    opacity: 1; 
+}
+
+/* Stage 8 descriptive text style adjustments */
+.st39 .st13 {
+  font-size: 16px; /* Adjust the font size as needed, smaller than the current size */
+  font-weight: bold;
+  /* You may adjust other properties like 'letter-spacing' if needed for better spacing */
+}

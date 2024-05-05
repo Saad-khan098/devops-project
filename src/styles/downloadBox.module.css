@@ -1,0 +1,10 @@
+.downloadBox {
+  border-radius: 18px;
+  /* border-image: linear-gradient(120deg, #f09 0%, #0ff 100%); */
+  border-image-slice: 1;
+  /* border-style: dashed; */
+  border-color: darkmagenta;
+  /* border-width: 2px; */
+  padding: 20px;
+  width: 100%;
+}

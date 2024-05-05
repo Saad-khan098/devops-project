@@ -1,0 +1,25 @@
+.voxaLogo {
+  width: 100px;
+}
+
+.heading {
+  color: white;
+  font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 532px) {
+  .voxaLogo {
+    width: 60px;
+  }
+
+  .heading {
+    color: white;
+    font-size: 2.5rem;
+  }
+}
+
+.downloadlink {
+  color: #7d4daf;
+  font-size: 1rem;
+  font-weight: bold;
+}

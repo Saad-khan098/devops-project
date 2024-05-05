@@ -1,0 +1,47 @@
+/* First Linear Gradient */
+
+@font-face {
+  font-family: "Kanit";
+  src: url("/VoxaLinkPro/client/public/fonts/Kanit-Regular.ttf") format("ttf");
+  font-weight: normal;
+}
+
+.cls1 {
+  fill: #e93492;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  font-size: 98.04px;
+}
+
+.cls2 {
+  fill: url(#New_Gradient_Swatch);
+}
+
+.cls3 {
+  fill: none;
+  stroke: url(#New_Gradient_Swatch);
+  stroke-miterlimit: 10;
+  stroke-width: 17px;
+}
+
+.cls3.animated {
+  stroke-dasharray: 1492.25; /* Update with your calculated total length */
+  stroke-dashoffset: 1492.25;
+  animation: drawStroke 1s forwards; /* Adjust the duration as needed */
+}
+
+.Layer1 {
+  width: 100px;
+}
+
+@keyframes drawStroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media only screen and (max-width: 484px) {
+  .Layer1 {
+    width: 80px;
+  }
+}

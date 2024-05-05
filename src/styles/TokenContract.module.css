@@ -1,0 +1,41 @@
+@keyframes neonGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 7px #9d50bb, 0 0 6px #9d50bb, 0 0 10px #9d50bb,
+      0 0 2px #ff6fa9, 0 0 2px #ff6fa9, 0 0 5px #ff6fa9, 0 0 7px #9d50bb;
+  }
+  50% {
+    box-shadow: 0 0 12px #ff6ff3, 0 0 2px #ff6fa9, 0 0 2px #ff6fa9,
+      0 0 8px #9d50bb, 0 0 10px #3a08c4, 0 0 2px #9d50bb, 0 0 2px #ff6fa9;
+  }
+}
+
+.neonGlow {
+  animation: neonGlow 2s infinite alternate;
+  position: relative;
+  border-radius: 20px; /* Rounded edges for the neon glow */
+}
+
+.neonGlow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 1px rgba(131, 8, 86, 0.9),
+    /* Deep pink glow */ 0 0 1px rgba(129, 17, 233, 0.7); /* Purple glow */
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 20px; /* Match the border-radius of the parent */
+}
+
+.tokenCard {
+  background-color: rgba(41, 43, 47, 0.35); /* Semi-transparent background */
+  border-radius: 20px; /* Rounded edges for the card */
+  padding: 20px; /* Padding inside the card */
+  color: white; /* Text color */
+  margin: 0 auto; /* Center the card */
+  max-width: 1200px; /* Maximum width of the card */
+  overflow: hidden; /* Ensures that children respect the border-radius */
+}

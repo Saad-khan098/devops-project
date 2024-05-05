@@ -1,0 +1,13 @@
+.customError {
+  border-color: hsl(308, 100%, 50%);
+  width: 450px;
+}
+
+@media only screen and (max-width: 466px) {
+  .customError {
+    width: 350px;
+  }
+  .errText {
+    margin-left: 15px;
+  }
+}

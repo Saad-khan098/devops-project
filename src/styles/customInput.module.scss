@@ -1,0 +1,95 @@
+.inputgroup {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    z-index: 2;
+    @supports (mix-blend-mode: darken) {
+      position: relative;
+      mix-blend-mode: lighten;
+  
+      &__label {
+        position: absolute;
+        left: 1.4em;
+        top: -0.68em;
+        background: #000;
+      }
+    }
+  
+    &__label {
+      padding: 0 0.5em;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+      font-size: 0.875em;
+      letter-spacing: 0.1em;
+      color: #ccd;
+      color: rgba(255, 220, 255, 0.6);
+      cursor: pointer;
+    }
+  
+    &__input {
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1;
+      border-style: none;
+      outline: none;
+      // height calc line-height + (vertical-padding * 2) + (vertical-border * 2)
+      height: calc(1em + 1.6em + 0.5em);
+      width: 100%;
+      padding: 0.8em 1em;
+      border: 0.25em solid transparent;
+      background-image: linear-gradient(#000, #000),
+        linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      border-radius: 1.8em;
+      background-size: 200% 100%;
+      transition: background-position 0.8s ease-out;
+      
+      &:hover {
+        background-position: 100% 0;
+      }
+  
+      &:focus {
+        outline: 2px dashed #ad2b89;
+        outline-offset: 0.5em;
+      }
+    }
+  }
+  
+    @media only screen and (max-width: 484px) {
+   
+    .inputgroup {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      z-index: 2;
+      @supports (mix-blend-mode: darken) {
+        position: relative;
+        mix-blend-mode: lighten;
+    
+        &__label {
+          position: absolute;
+          left: 1.4em;
+          top: -0.68em;
+          background: #000;
+        }
+      }
+    
+      &__label {
+        padding: 0 0.5em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+        font-size: 0.775em;
+        letter-spacing: 0.1em;
+        color: #ccd;
+        color: rgba(255, 220, 255, 0.6);
+        cursor: pointer;
+      }
+    
+      &__input {
+        color: #fff;
+        font-size: 0.8rem;
+      }
+    } 
+  }

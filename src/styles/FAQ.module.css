@@ -1,0 +1,71 @@
+/* FAQ.module.css */
+
+.accordion {
+    background-color: rgba(255, 255, 255, 0.1); /* Very light background for a subtle transparent effect */
+    backdrop-filter: blur(10px); /* Glossy/blurry effect */
+    color: white;
+    margin: 8px 0;
+    border-radius: 16px;
+    box-shadow: 0px 3px 6px #00000066;
+    overflow: hidden;
+  }
+  
+  .accordionSummary {
+    background-color: rgba(255, 255, 255, 0.06); /* Very light background for a subtle transparent effect */
+    border-radius: 16px;
+    color: white;
+    position: relative;
+  }
+  
+  .accordionSummaryExpanded {
+    background-color: #1A1C26; /* Adjust this color to match your theme */
+    /* Additional styles for expanded summary if needed */
+  }
+  
+  .accordionDetails {
+    /* Existing properties... */
+    background-color: rgba(10, 0, 0, 0.8); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Glossy/blurry effect */
+    border-top: 2px solid rgba(255, 255, 255 0.2); /* Semi-transparent top border */
+    
+    /* Adjust the start and end colors of the gradient to have transparency */
+    background-image: linear-gradient(
+      to right, 
+      rgba(32, 9, 133, 0.15), /* Start color with transparency */
+      rgba(155, 0, 245, 0.24), /* Mid color with transparency */
+      rgba(255, 90, 192, 0.39)  /* End color with transparency */
+    );
+    
+    opacity: 0.65;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    /* Padding and other styles... */
+    padding: 20px;
+  }
+  
+  .accordionDetailsContent {
+    padding: 20px; /* Adjust padding to match your design */
+  }
+  
+  .accordionSummaryExpandIcon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Remove any borders or shadows from the details */
+  .MuiAccordionDetails-root {
+    border: none;
+    box-shadow: none;
+  }
+  
+  /* Style for the plus icon when accordion is not expanded */
+  .plusIcon {
+    color: #fff; /* Color of plus icon */
+  }
+  
+  /* Style for the close icon when accordion is expanded */
+  .closeIcon {
+    color: #fff; /* Color of close icon */
+  }
+  

@@ -1,0 +1,35 @@
+.cls1 {
+  fill: none;
+  stroke: url(#New_Gradient_Swatch);
+  stroke-miterlimit: 10;
+  stroke-width: 12px;
+  stroke-dasharray: 362.92437744140625; /* Update with your calculated total length */
+  stroke-dashoffset: 362.92437744140625;
+  animation: drawStroke 2s forwards infinite; /* Adjust the duration as needed */
+}
+/*362.92437744140625*/
+/* 362.91436767578125 */
+.cls1,
+.cls2 {
+  fill: none;
+  stroke-miterlimit: 10;
+}
+
+.cls2 {
+  stroke: url(#New_Gradient_Swatch);
+  stroke-width: 9px;
+  stroke-dasharray: 362.92437744140625; /* Update with your calculated total length */
+  stroke-dashoffset: 362.92437744140625;
+  animation: drawStroke 2s forwards infinite; /* Adjust the duration as needed */
+}
+
+.paused {
+  stroke-dashoffset: 0;
+  animation-play-state: paused;
+}
+
+@keyframes drawStroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

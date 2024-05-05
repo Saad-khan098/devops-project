@@ -1,0 +1,33 @@
+ /* global.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom styles for the hover effect */
+.bttn:before {
+    transition: all 0.5s ease;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background-color: #FF0072; /* primary color */
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .bttn:hover:before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .bttn:focus:before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
